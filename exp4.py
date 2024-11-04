@@ -83,3 +83,25 @@ def pvc():
 
 # Driver Code
 pvc()
+
+'''
+1.Initialize the Game Board: Set up a 3x3 grid where each cell starts empty.
+2.Display the Game Board: For each cell, display an "X" if occupied by the player, "O" if occupied by the computer, and an empty space if unoccupied.
+3.Clear the Board: Reset the game by clearing all cells to make them empty.
+4.Check for Winning Condition: Define the winning patterns (rows, columns, and diagonals). A player wins if they occupy any one of these patterns completely.
+5.Game Result Display: After the game finishes, show whether the player won, the computer won, or if it was a draw.
+6.Identify Empty Cells: Check each cell in the grid, and if it’s empty, save its location. This helps in identifying possible moves.
+7.Set a Move on the Board: Place the player's or computer's symbol in the specified cell.
+8.Player's Turn: Ask the player to enter a move between 1 and 9. Convert this input to a cell position and place their symbol if the cell is empty. If it’s occupied, ask for a new input.
+9.Computer's Turn (Optimal Move): Use the minimax algorithm:
+    Simulate all possible moves by the computer and player.
+    Score each possible outcome:
+        If the player wins, score is -10.
+        If the computer wins, score is +10.
+        If it’s a draw, score is 0.
+    Choose the move that maximizes the computer's chance of winning and minimizes the player’s.
+    Place the computer's symbol in the best position.
+10.Switch Turns: Alternate turns between the player and the computer until someone wins or there are no empty cells.
+11.Play the Game: Allow the player to choose if they want to play first or second. Continue the game loop, switching turns until a win or a draw occurs. Display the final result.
+12.Start Game: Begin the game with the above steps and handle the entire flow until the game concludes.
+'''
