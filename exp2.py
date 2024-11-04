@@ -92,3 +92,27 @@ if __name__ == "__main__":
     result, cost = AStarSearch((s1, s2), (g1, g2), graph)
     print("Route:", result)
     print("Cost:", cost)
+
+
+
+
+
+1.Create a graph that can hold barrier locations (obstacles).
+2.Ask the user how many barriers there are, then collect the coordinates of each barrier and store them.
+3.Use a heuristic function to estimate the cost to reach the goal from any position. This estimation is based on the distance between two points.
+4.Define possible moves (up, down, left, right, diagonal) for each position on the grid.
+5.Check each move to ensure it stays within the grid’s boundaries. If valid, add it to a list of neighboring positions.
+6.Assign a high cost to move into a barrier and a regular cost to move into a free space.
+7.Initialize costs for reaching positions, starting with zero cost to reach the start position.
+8.Track positions to explore, starting with the start position, and mark explored positions.
+9.While there are positions to explore:
+    Pick the position with the lowest estimated cost.
+    If it’s the goal, reconstruct the path taken and return it with the final cost.
+    If not, remove the position from the list to explore and add it to the explored list.
+    For each neighboring position:
+        Skip it if already explored.
+        Calculate the cost to move to this neighbor from the current position.
+        If this cost is better than previously recorded, update the path and cost records for this neighbor.
+10.Get start and goal coordinates from the user.
+11.Run the A* algorithm to find the path from start to goal.
+12.Print the path found and the total cost.
