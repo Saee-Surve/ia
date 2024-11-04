@@ -22,7 +22,6 @@ graph = {
 print("DFS traversal starting from node A:")
 dfs(graph, 'A')
 
-
 # bfs
 
 from collections import deque
@@ -55,3 +54,23 @@ graph = {
 
 print("\nBFS traversal starting from node A:")
 bfs(graph, 'A')
+
+
+'''
+Depth-First Search (DFS) Algorithm (Simple Language)
+1.Start with a starting node (like "A") and mark it as visited.
+2.Print or record the current node.
+3.For each neighbor (connected node) of the current node:
+      If the neighbor hasn’t been visited, repeat these steps starting from that neighbor.
+4.Continue this process until all reachable nodes have been visited.
+
+Breadth-First Search (BFS) Algorithm (Simple Language)
+1.Start with a starting node (like "A") and mark it as visited.
+2.Add this node to a queue (a list where nodes are processed in order).
+3.While there are nodes in the queue:
+    Take the first node from the queue, print or record it.
+    For each neighbor of this node:
+        If the neighbor hasn’t been visited, mark it as visited and add it to the queue.
+4.Continue this until the queue is empty (all reachable nodes have been visited).
+'''
+
