@@ -96,7 +96,7 @@ if __name__ == "__main__":
 
 
 
-
+'''
 1.Create a graph that can hold barrier locations (obstacles).
 2.Ask the user how many barriers there are, then collect the coordinates of each barrier and store them.
 3.Use a heuristic function to estimate the cost to reach the goal from any position. This estimation is based on the distance between two points.
@@ -116,3 +116,4 @@ if __name__ == "__main__":
 10.Get start and goal coordinates from the user.
 11.Run the A* algorithm to find the path from start to goal.
 12.Print the path found and the total cost.
+'''
