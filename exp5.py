@@ -50,3 +50,22 @@ print("\nEdges in the Minimum Spanning Tree:")
 for u, v, w in mst:
     print(f"{u}-{v} (weight: {w})")
 print(f"\nTotal weight of MST: {total_weight}")
+
+
+'''
+Selection Sort
+1.Start with the first item in the list.
+2.Look through the rest of the list to find the smallest item.
+3.Swap this smallest item with the first item.
+4.Move to the next item in the list and repeat the process of finding the smallest item in the remaining list and swapping it.
+5.Keep repeating until all items are in order.
+
+Kruskal’s Algorithm for Minimum Spanning Tree (MST)
+1.Sort all edges by their weight from smallest to largest.
+2.Start with an empty set of edges for the MST.
+3.For each edge in the sorted list:
+    Check if adding this edge will form a cycle (using a helper that tracks connections between nodes).
+    If it doesn’t form a cycle, add this edge to the MST.
+4.Repeat until you’ve included enough edges to connect all nodes.
+5.The final set of edges forms the MST, and their total weight is the minimum required to connect all nodes.
+'''
